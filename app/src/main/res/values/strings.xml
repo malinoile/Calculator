@@ -13,10 +13,21 @@
     <string name="btn_null">0</string>
     <string name="btn_clear">C</string>
     <string name="btn_delete">D</string>
-    <string name="btn_multi">*</string>
+    <string name="btn_multi">x</string>
     <string name="btn_division">/</string>
     <string name="btn_plus">+</string>
     <string name="btn_minus">-</string>
     <string name="btn_calc">=</string>
     <string name="btn_dot">.</string>
+    
+    <string name="btn_log">log</string>
+    <string name="btn_bracket_left">(</string>
+    <string name="btn_bracket_right">)</string>
+    <string name="btn_sin">sin</string>
+    <string name="btn_cos">sin</string>
+    <string name="btn_tan">sin</string>
+    <string name="btn_factorial">!</string>
+    <string name="btn_percent">%</string>
+    <string name="btn_exp">e</string>
+    <string name="btn_degree">^</string>
 </resources>
