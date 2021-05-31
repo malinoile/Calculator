@@ -1,241 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/brick_texture"
-    android:stretchColumns="*"
-    android:shrinkColumns="*">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/full_row"
+    android:background="@drawable/brick_texture">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <TableLayout style="@style/full_table">
 
-        <TextView
-            android:id="@+id/calculate_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:layout_span="4"
-            android:paddingVertical="10dp"
-            android:paddingHorizontal="5dp"
-            android:textColor="@color/white"
-            android:textAlignment="textEnd"
-            android:text="@string/view_text"/>
+        <TableRow style="@style/full_row">
 
-    </TableRow>
+            <TextView
+                android:id="@+id/calculate_text"
+                android:layout_span="4"
+                style="@style/calculation_text"
+                android:text="@string/view_text"/>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        </TableRow>
 
-        <Button
-            android:id="@+id/button_clear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:background="@color/white"
-            android:textColor="@color/black"
-            android:text="@string/btn_clear"/>
+        <TableRow style="@style/full_row">
 
-        <Button
-            android:id="@+id/button_multiple"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:background="@color/white"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:text="@string/btn_multi"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_clear"
+                style="@style/number_button"
+                android:text="@string/btn_clear"/>
 
-        <Button
-            android:id="@+id/button_division"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:background="@color/white"
-            android:textColor="@color/black"
-            android:text="@string/btn_division"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_multiple"
+                style="@style/operation_button"
+                android:text="@string/btn_multi"/>
 
-        <Button
-            android:id="@+id/button_delete_symbol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:text="@string/btn_delete"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_division"
+                style="@style/operation_button"
+                android:text="@string/btn_division"/>
 
-    </TableRow>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_delete_symbol"
+                style="@style/operation_button"
+                android:text="@string/btn_delete"/>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        </TableRow>
 
-        <Button
-            android:id="@+id/button_seven"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:text="@string/btn_seven"/>
+        <TableRow style="@style/full_row">
 
-        <Button
-            android:id="@+id/button_eight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:text="@string/btn_eight"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_seven"
+                style="@style/number_button"
+                android:text="@string/btn_seven"/>
 
-        <Button
-            android:id="@+id/button_nine"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:background="@color/white"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:text="@string/btn_nine"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_eight"
+                style="@style/number_button"
+                android:text="@string/btn_eight"/>
 
-        <Button
-            android:id="@+id/button_plus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:text="@string/btn_plus"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_nine"
+                style="@style/number_button"
+                android:text="@string/btn_nine"/>
 
-    </TableRow>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_plus"
+                style="@style/operation_button"
+                android:text="@string/btn_plus"/>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        </TableRow>
 
-        <Button
-            android:id="@+id/button_four"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:text="@string/btn_four"/>
+        <TableRow style="@style/full_row">
 
-        <Button
-            android:id="@+id/button_five"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:text="@string/btn_five"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_four"
+                style="@style/number_button"
+                android:text="@string/btn_four"/>
 
-        <Button
-            android:id="@+id/button_six"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:text="@string/btn_six"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_five"
+                style="@style/number_button"
+                android:text="@string/btn_five"/>
 
-        <Button
-            android:id="@+id/button_minus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:text="@string/btn_minus"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_six"
+                style="@style/number_button"
+                android:text="@string/btn_six"/>
 
-    </TableRow>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_minus"
+                style="@style/operation_button"
+                android:text="@string/btn_minus"/>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        </TableRow>
 
-        <Button
-            android:id="@+id/button_one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:text="@string/btn_one"/>
+        <TableRow style="@style/full_row">
 
-        <Button
-            android:id="@+id/button_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:text="@string/btn_two"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_one"
+                style="@style/number_button"
+                android:text="@string/btn_one"/>
 
-        <Button
-            android:id="@+id/button_three"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:text="@string/btn_three"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_two"
+                style="@style/number_button"
+                android:text="@string/btn_two"/>
 
-        <Button
-            android:id="@+id/button_calc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:text="@string/btn_calc"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_three"
+                style="@style/number_button"
+                android:text="@string/btn_three"/>
 
-    </TableRow>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_calc"
+                style="@style/operation_button"
+                android:text="@string/btn_calc"/>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        </TableRow>
 
-        <Button
-            android:id="@+id/button_null"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:layout_span="2"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:text="@string/btn_null"/>
+        <TableRow style="@style/full_row">
 
-        <Button
-            android:id="@+id/button_dot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:layout_span="2"
-            android:textColor="@color/black"
-            android:background="@color/white"
-            android:text="@string/btn_dot"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_null"
+                android:layout_span="2"
+                style="@style/number_button"
+                android:text="@string/btn_null"/>
 
-    </TableRow>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_dot"
+                android:layout_span="2"
+                style="@style/number_button"
+                android:text="@string/btn_dot"/>
 
-</TableLayout>
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>
