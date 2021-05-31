@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/brick_texture"
     android:stretchColumns="*"
-    android:shrinkColumns="*">
+    android:shrinkColumns="*"
+    tools:ignore="MissingDefaultResource">
 
     <TableRow
         android:layout_width="match_parent"
@@ -70,6 +71,26 @@
             android:background="@color/white"
             android:text="@string/btn_delete"/>
 
+        <Button
+            android:id="@+id/button_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="@string/btn_percent"/>
+
+        <Button
+            android:id="@+id/button_factorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="@string/btn_factorial"/>
+
     </TableRow>
 
     <TableRow
@@ -115,6 +136,26 @@
             android:textColor="@color/black"
             android:background="@color/white"
             android:text="@string/btn_plus"/>
+
+        <Button
+            android:id="@+id/button_sin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="@string/btn_sin"/>
+
+        <Button
+            android:id="@+id/button_cos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="@string/btn_cos"/>
 
     </TableRow>
 
@@ -162,6 +203,26 @@
             android:background="@color/white"
             android:text="@string/btn_minus"/>
 
+        <Button
+            android:id="@+id/button_tan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="@string/btn_tan"/>
+
+        <Button
+            android:id="@+id/button_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="@string/btn_log"/>
+
     </TableRow>
 
     <TableRow
@@ -208,6 +269,26 @@
             android:background="@color/white"
             android:text="@string/btn_calc"/>
 
+        <Button
+            android:id="@+id/button_bracket_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="@string/btn_bracket_left"/>
+
+        <Button
+            android:id="@+id/button_bracket_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="@string/btn_bracket_right"/>
+
     </TableRow>
 
     <TableRow
@@ -235,6 +316,26 @@
             android:textColor="@color/black"
             android:background="@color/white"
             android:text="@string/btn_dot"/>
+
+        <Button
+            android:id="@+id/button_exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="@string/btn_exp"/>
+
+        <Button
+            android:id="@+id/button_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:text="@string/btn_degree"/>
 
     </TableRow>
 
