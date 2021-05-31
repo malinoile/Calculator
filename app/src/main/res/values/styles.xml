@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="full_row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="full_table" parent="full_row">
+        <item name="android:stretchColumns">*</item>
+        <item name="android:shrinkColumns">*</item>
+    </style>
+    <style name="button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/upper_default_text_size</item>
+        <item name="android:insetBottom">@dimen/null_dimension</item>
+        <item name="android:insetTop">@dimen/null_dimension</item>
+        <item name="cornerRadius">@dimen/default_dimen</item>
+        <item name="android:layout_margin">@dimen/half_dimen</item>
+    </style>
+    <style name="number_button" parent="button">
+        <item name="backgroundTint">@color/calculator_blue</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="operation_button" parent="button">
+        <item name="backgroundTint">@color/operation_button</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="special_operation_button" parent="button">
+        <item name="backgroundTint">@color/special_operation_button</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="calculation_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/double_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/default_dimen</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:background">@color/background_calc_text</item>
+    </style>
+</resources>
