@@ -24,8 +24,8 @@
     <string name="btn_bracket_left">(</string>
     <string name="btn_bracket_right">)</string>
     <string name="btn_sin">sin</string>
-    <string name="btn_cos">sin</string>
-    <string name="btn_tan">sin</string>
+    <string name="btn_cos">cos</string>
+    <string name="btn_tan">tg</string>
     <string name="btn_factorial">!</string>
     <string name="btn_percent">%</string>
     <string name="btn_exp">e</string>

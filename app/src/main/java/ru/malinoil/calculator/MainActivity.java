@@ -49,13 +49,6 @@ public class MainActivity extends AppCompatActivity {
             calculator.clear();
             calculatorText.setText(calculator.getTextOnCalculator().toString());
         });
-
-        /*findViewById(R.id.button_delete_symbol).setOnClickListener(v -> {
-            if(calculator.getTextOnCalculator().length() > 0) {
-                calculator.getTextOnCalculator().setLength(calculator.getTextOnCalculator().length() - 1);
-                calculatorText.setText(calculator.getTextOnCalculator().toString());
-            }
-        });*/
     }
 
     private void initNumberButtonListener(int id, int symbol) {
