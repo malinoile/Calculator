@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/radiogroup_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radio_day_theme"
+            style="@style/radio_button"
+            android:text="@string/radio_day" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radio_night_theme"
+            style="@style/radio_button"
+            android:text="@string/radio_night"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/choose_theme"
+            android:text="@string/button_choose_theme"
+            style="@style/system_button"
+            android:layout_weight="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/select_theme"
+            android:text="@string/button_select_theme"
+            style="@style/system_button"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

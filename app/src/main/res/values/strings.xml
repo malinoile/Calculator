@@ -30,4 +30,9 @@
     <string name="btn_percent">%</string>
     <string name="btn_exp">e</string>
     <string name="btn_degree">^</string>
+
+    <string name="radio_day">Дневной режим</string>
+    <string name="radio_night">Ночной режим</string>
+    <string name="button_choose_theme">Применить</string>
+    <string name="button_select_theme">Выбрать</string>
 </resources>
